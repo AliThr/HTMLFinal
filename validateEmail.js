@@ -24,7 +24,16 @@ function ValidateEmail(inputText){
     }
     return false;
 }
-
+function EnableSubmitButton(){
+    let name = document.getElementById("inputName")
+    let email = document.getElementById("email")
+    if (ValidateName(name) && ValidateEmail(email)){
+        document.getElementById("submit").disabled = false;
+    }
+    else{
+        document.getElementById("submit").disabled = true;
+    }
+}
 function Close(){
-        document.getElementById("popup1").style.display = "none";
+        window.location.hash = "";
 }

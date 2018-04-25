@@ -177,7 +177,7 @@ body {
     }
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 975px){
     .popup{
         width: 30%;
     }
@@ -185,4 +185,10 @@ body {
 
 .submit{
     transition: all 200ms;
+}
+
+@media screen and (max-width: 949px){
+    .submit{
+        margin-top: 10px;
+    }
 }

@@ -198,14 +198,14 @@
                             Name: 
                         </p>
                         <form class="name">
-                            <input type="text" id="inputName">
+                            <input type="text" id="inputName" onkeyup="EnableSubmitButton()">
                         </form>
                         <p>
                             Email Address: 
                         </p>
                         <form class="email">
-                            <input type="text" id="email">
-                            <input type="submit" id="submit" value="Submit" onclick="ValidateAndClose(event)"/>
+                            <input type="text" id="email" onkeyup="EnableSubmitButton()">
+                            <input type="submit" disabled="true" id="submit" value="Submit" onclick="ValidateAndClose(event)"/>
                         </form>
                         <br>
                     </div>
