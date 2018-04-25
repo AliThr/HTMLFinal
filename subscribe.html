@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script type="text/javascript" src="bootstrap.js"></script>
-    <script type="text/javascript" src="validateName.js"></script>
-    <script type="text/javascript" src="validateEmail.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="bootstrap.js"></script>
+        <script type="text/javascript" src="validateName.js"></script>
+        <script type="text/javascript" src="validateEmail.js"></script>
         <title>Final Project - Newsletter</title>
     </head>
     <body class="darkness">
@@ -192,20 +192,20 @@
                     <div class="content">
                         <p>
                             Just enter your name and email address below and you'll be on our list to recieve 
-                            all of our newsletters and occasional giveaways!
+                            all of our newsletters and occasional giveaways perhaps!
                         </p>
                         <p>
                             Name: 
                         </p>
                         <form class="name">
-                            <input type="text" name="name">
+                            <input type="text" id="inputName">
                         </form>
                         <p>
                             Email Address: 
                         </p>
                         <form class="email">
-                            <input type="text" name="email">
-                            <input type="submit" name="submit" value="Submit" onclick="ValidateAndClose(email)"/>
+                            <input type="text" id="email">
+                            <input type="submit" id="submit" value="Submit" onclick="ValidateAndClose(event)"/>
                         </form>
                         <br>
                     </div>
