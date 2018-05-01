@@ -1,4 +1,4 @@
-.navbar{
+.navbar {
     text-align: center;
     padding: 1px;
 }
@@ -13,49 +13,68 @@
     box-sizing: border-box;
 } */
 
-.mid{
+.mid {
     text-align: center;
 }
+
 .more {
     display: none;
 }
+
 .center {
     margin: auto;
     width: 100%;
     padding: 10px;
 }
-.darkness{
+
+.darkness {
     background-color: #bbb;
 }
-.lightness{
+
+.lightness {
     background-color: #edeff1;
 }
-html{
+
+html {
     min-height: 100%;
     position: relative;
 }
-body{
+
+body {
     min-height: 100%;
 }
+
 h1 {
     color: rgba(0, 0, 0, 0.85);
 }
+
 h2 {
     color: rgba(0, 0, 0, 0.80);
 }
+
 h3 {
     color: rgba(0, 0, 0, 0.75);
 }
+
 h4 {
     color: rgba(0, 0, 0, 0.70);
 }
+
 h5 {
     color: rgba(0, 0, 0, 0.65);
 }
+
 p {
     color: rgba(0, 0, 0, 0.60);
 }
-.stretch{
+
+q {
+    color: rgba(0, 0, 0, 0.55);
+    font-style: italic;
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.stretch {
     position: relative;
     top: 0;
     bottom: 0;
@@ -63,7 +82,6 @@ p {
     right: 0;
     overflow: scroll;
     min-height: 100%;
-
 }
 
 html {
@@ -75,13 +93,20 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-  
+.img-round {
+    border-radius: 4px;
+}
+
+.paragraph-padding {
+    padding-top: 5px;
+}
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
-  
+
 body {
     position: relative;
     margin: 0;
@@ -89,22 +114,22 @@ body {
     min-height: 100%;
     font-family: "Helvetica Neue", Arial, sans-serif;
 }
-  
+
 .demo {
     margin: 0 auto;
     padding-top: 64px;
     max-width: 640px;
     width: 94%;
 }
-  
+
 .demo h1 {
     margin-top: 0;
 }
-  
-  /**
+
+/**
    * Footer Styles
    */
-  
+
 .footer {
     position: absolute;
     right: 0;
@@ -114,7 +139,7 @@ body {
     background-color: #efefef;
     text-align: center;
 }
-  
+
 .overlay {
     position: fixed;
     top: 0;
@@ -126,11 +151,12 @@ body {
     visibility: hidden;
     opacity: 0;
 }
+
 .overlay:target {
     visibility: visible;
     opacity: 1;
 }
-  
+
 .popup {
     margin: 70px auto;
     padding: 20px;
@@ -140,12 +166,13 @@ body {
     position: relative;
     transition: all 2s ease-in-out;
 }
-  
+
 .popup h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
 }
+
 .popup .close {
     position: absolute;
     top: 20px;
@@ -156,24 +183,25 @@ body {
     text-decoration: none;
     color: #333;
 }
+
 .popup .close:hover {
     color: rgb(216, 6, 6);
 }
+
 .popup .content {
     max-height: 30%;
     overflow: auto;
 }
-  
-@media screen and (max-width: 700px){
 
-    .popup{
-      width: 70%;
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 70%;
     }
 }
 
-@media screen and (max-width: 450px){
-    .popup{
-      width: 80%;
+@media screen and (max-width: 450px) {
+    .popup {
+        width: 80%;
     }
     .popup .close {
         position: absolute;
@@ -200,18 +228,18 @@ body {
     }
 }
 
-@media screen and (min-width: 975px){
-    .popup{
+@media screen and (min-width: 975px) {
+    .popup {
         width: 30%;
     }
 }
 
-.submit{
+.submit {
     transition: all 200ms;
 }
 
-@media screen and (max-width: 949px){
-    .submit{
+@media screen and (max-width: 949px) {
+    .submit {
         margin-top: 10px;
     }
 }
