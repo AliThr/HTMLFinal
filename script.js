@@ -37,3 +37,7 @@ function EnableSubmitButton(){
 function Close(){
         window.location.hash = "";
 }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
