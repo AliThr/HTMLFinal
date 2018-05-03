@@ -179,6 +179,27 @@ body {
     font-family: Tahoma, Arial, sans-serif;
 }
 
+.float {
+    position: fixed;
+}
+
+#menu {
+    position: fixed;
+    left: 5%;
+    top: 0%;
+    z-index: 5;
+    background: hsla(0, 0%, 0%, 0.2);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-align: left;
+    border: solid hsla(0, 0%, 0%, 0.15);
+    border-top: none;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.452);
+    border-radius: 0.5em 0.5em 2em 2em;
+  }
+
 .popup .close {
     position: absolute;
     top: 20px;
