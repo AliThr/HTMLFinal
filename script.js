@@ -1,6 +1,6 @@
 function ValidateAndClose(event){  
-    let name = document.getElementById("inputName")
-    let email = document.getElementById("email")
+    let name = document.getElementById("inputName").value
+    let email = document.getElementById("email").value
     if(ValidateName(name) && ValidateEmail(email)){  
         alert("Thank you! You are now subscribed to our news letters!")
         Close(); 
@@ -12,21 +12,21 @@ function ValidateAndClose(event){
 }  
 function ValidateName(inputText){
     console.log(inputText);
-    if(inputText != ""){
+    if(inputText.value != ""){
         return true;
     }
     return false;
 }
 function ValidateEmail(inputText){
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
-    if(inputText.value.match(mailformat)){  
+    if(inputText.match(mailformat)){  
         return true;
     }
     return false;
 }
 function EnableSubmitButton(){
-    let name = document.getElementById("inputName")
-    let email = document.getElementById("email")
+    let name = document.getElementById("inputName").value
+    let email = document.getElementById("email").value
     if (ValidateName(name) && ValidateEmail(email)){
         document.getElementById("submit").disabled = false;
     }
@@ -38,6 +38,7 @@ function Close(){
         window.location.hash = "";
 }
 
-function myFunction(x) {
-    x.classList.toggle("change");
+function toggleDropdown(dropdownButton) {
+    dropdownButton.classList.toggle("change");
 }
+
