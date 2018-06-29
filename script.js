@@ -12,15 +12,17 @@ function ValidateAndClose(event){
 }  
 function ValidateName(inputText){
     console.log(inputText);
-    if(inputText.value != ""){
+    if(inputText != undefined && inputText != ""){
         return true;
     }
     return false;
 }
 function ValidateEmail(inputText){
     let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
-    if(inputText.match(mailformat)){  
-        return true;
+    if(inputText != undefined){
+        if(inputText.match(mailformat)){  
+            return true;
+        }  
     }
     return false;
 }
